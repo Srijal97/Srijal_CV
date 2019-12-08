@@ -48,6 +48,14 @@
 \documentclass[]{deedy-resume-openfont}
 \usepackage{fancyhdr}
 \usepackage{fontawesome}
+\usepackage{multirow}
+\usepackage{makecell}
+
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
  
 \pagestyle{fancy}
 \fancyhf{}
@@ -198,70 +206,94 @@ Swimming \textbullet{} Reading \textbullet{} Video Games \\
 \begin{minipage}[t]{0.66\textwidth} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Projects and Competitions
+%     Achievements
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Projects and Competitions}
-
-\runsubsection{Project ATLAS}
-\descript{| BE final year project | \href{http://www.drishti.works/}{Drishti Works}, Mumbai }
-\location{Jul '18 - Apr '19}
+\section{Achievements}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
+
 \begin{tightemize}
-\item Build of a tethered multirotor with an AUW of 10Kgs.
-\item Designed 140V to 32V@20A step-down converters in a small form-factor for increasing the altitude capabilities of the system. [Publications pending]
+	\item \textbf{2nd Prize in Technical Paper Competition} at SPIT, Mumbai (2019)
+	
+	\item \textbf{3rd Prize in Innovatron’18}, an inter-college project competition held at SPIT, Mumbai, for the project "Room Occupancy Indicating System" (2018)
+	
+	\item \textbf{1st out of 162 teams nationwide} in e-Yantra Robotics Competiton. (2016-17)
+	
+	\item \textbf{1st Prize in InterThrone 2017} an IoT focused contest. Award of INR 300,000 given for the automated cycle locking prototypes developed for CYKLO (2017)
+	
+	\item \textbf{1st Prize in Circuit Troubleshooting Competition} at SPIT, Mumbai (2016)
+	
+	
+	\item \textbf{2nd out of 459 entries worldwide} in the Arduino All-The-Things Contest on Instructables, for the project of "The Companion IC" \href{https://www.instructables.com/id/The-Companion-IC/}{ \faExternalLink} (2016)
+	
+	\item \textbf{1st Prize in CodeChamps}, a programming competition across all departments of SPIT, Mumbai. Language of choice used was C++ (2015)
+	
 \end{tightemize}
 \sectionsep
 
-\runsubsection{Project AURUS}
-\descript{| \href{http://www.drishti.works/}{Drishti Works}, Mumbai }
-\location{4 Jun – 15 Jul '18}
-\begin{tightemize}
-\item Worked on the development of AURUS, a beach cleaning robot.
-\item Involved in a diverse range of work including programming for the various sensors and functionality, developing the IMU system (MPU6050, MPU9250), the power distribution system, wiring, and several custom PCBs for the robot.
-\item Created ROS nodes for communication between the controller and Nvidia Jetson and greatly improved system reliability in the software aspect as well.
-\end{tightemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Teaching
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Teaching} 
+\begin{tabular}{r L{8.5cm} l}
+	
+	% used \makecell to use newline inside of a cell and \phantom{.} for an invisible character. Without this, the text is vertically center aligned.
+	
+	2019	  & Teaching Assistantship: Digital Circuits  & SPIT, Mumbai   \\
+	
+	2019	  & Teaching Assistantship: Product Design  & SPIT, Mumbai   \\
+	
+	\makecell{2019 \\ \phantom{.}}  & IEEE Workshop on adding WiFi to your projects using ESP8266 and MQTT  & \makecell{SPIT, Mumbai \\ \phantom{.}}   \\
+	
+	2019	  & Teaching Assistantship: Robotic Vision  & SPIT, Mumbai   \\
+	
+	\makecell{2018 \\ \phantom{.}}	  & IEEE Workshop on Introduction to Microcontrollers, Sensors and Arduino  & \makecell{SPIT, Mumbai \\ \phantom{.}}   \\
+	
+	2018	  & Workshop on Introduction to Embedded Systems Design  & SPIT, Mumbai   \\
+	
+	\makecell{2016 \\ \phantom{.}}	  & Robocon Workshop on PCB making and basics of a robotic system  & \makecell{SPIT, Mumbai \\ \phantom{.}}   \\
+\end{tabular}
 \sectionsep
 
-\runsubsection{Hololens Experience Center}
-\descript{|  \href{https://fractalanalytics.com/}{Fractal Analytics}, Mumbai}
-\location{27 Nov - 26 Dec '17}
-\begin{tightemize}
-	\item Developed applications on the Microsoft HoloLens Mixed Reality(MR) headsets, in a group of 2.
-	\item Conventional statistical results of Share of Shelf, Share of Sight and Compliance for a supermarket shelf are presented in the form of holograms.
-	\item Learned app development in Unity using C\#, AR and MR concepts.
-\end{tightemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Work Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Work Experience}
+
+\runsubsection{SP Product Development Cell}
+\descript{| Research Associate }
+\location{July '19 onwards | SPIT, Mumbai}
+
+Work on industry consultancy projects under Dr. R. R. Sawant and Dr. Y. S. Rao. Involves development of embedded systems of different microcontroller families like dsPIC, C2000 and ATmega that usually deal with high power electronics.
+
 \sectionsep
 
-\runsubsection{Modular Robots}
-\descript{| IIT Bombay }
-\location{22 May – 7 Jul '17}
-\begin{tightemize}
-	\item Internship to create self-reconfigurable robotic modules, in a group of 2.
-	\item 4 robotics modules were created which each consisted of an Arduino Nano, 5 servo motors, bluetooth, RF modules for wireless communication and LiPo batteries for power.
-	\item Created a Virtual Dtto interface on VRep with bluetooth control, sensors and behaviour identical to the actual robot.
-	\item Also involved designing the 3D CAD models of the modules on Fusion 360, Autodesk Inventor and 3D printing the designs.
-\end{tightemize}
+\runsubsection{\href{http://www.drishti.works/}{Drishti Works}}
+\descript{| Intern - Robotics Engineer }
+\location{4 Jun – 15 Jul '18 | Mumbai}
+
+Developed the sensing, power distribution and IMU system for AURUS, a beach cleaning robot. Vastly improved system reliability by creating a custom ROS nodes communication between the station (desktop) and the robot (Nvidia Jetson).
+
 \sectionsep
 
-\runsubsection{eYantra Robotics Competiton}
-\descript{| IIT Bombay }
-\location{Nov '16 - Apr '17}
-\begin{tightemize}
-\item \textbf{1st out of 162 teams} in the national level competition.
-\item Planned and implemented the algorithms for motion planning and used OpenCV with Python for Image Processing.
-\item Played the role of team leader in a team of 4. 
-\end{tightemize}
+\runsubsection{\href{https://fractalanalytics.com/}{Fractal Analytics}}
+\descript{| Project Intern}
+\location{27 Nov - 26 Dec '17 | Mumbai}
+
+Developed applications using Unity (C\#) on the Microsoft HoloLens Mixed Reality(MR) headsets for displaying conventional statistical results in the form of holograms.
+
 \sectionsep
 
-\runsubsection{CYKLO}
-\descript{| SPIT, Mumbai}
-\location{Nov '15 - May '17}
-\begin{tightemize}
-\item CYKLO is a point-to-point, peer-to-peer cycle sharing service, started in 2015 at Sardar Patel Institute of Technology(SPIT), Mumbai, with me as a core part of the team.
-\item Designed, built and programmed several hardware prototypes for the automated cycle locking system, including the locking mechanism, electronic controller and network interface.
-\item \textbf{1st Prize} in InterThrone 2017, an IoT focused contest under the Public Transport category with an award of \textbf{INR 300,000.}
-\end{tightemize}
+\runsubsection{IIT Bombay}
+\descript{| Summer Intern - Modular Robots}
+\location{27 Nov - 26 Dec '17 | Mumbai}
+
+Created self-reconfigurable robot modules inspired by the Dtto Robot. Developed virtual simulations of the same modules on VRep with bluetooth control.
+
 \sectionsep
 
 
@@ -269,63 +301,105 @@ Swimming \textbullet{} Reading \textbullet{} Video Games \\
 
 \newpage
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Other Work
+%     Projects and Competitions
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Other Work}
+\section{Relevant Projects}
+
+\runsubsection{Project ATLAS}
+\descript{| BE final year project}
+\location{Jul '18 - Apr '19 | \href{http://www.drishti.works/}{Drishti Works}, Mumbai }
+\begin{tightemize}
+	\item Build of a tethered multirotor with an AUW of 10Kgs.
+	\item Designed 140V to 32V@20A step-down converters in a small form-factor for increasing the altitude capabilities of the system. [Final Report \href{http://bit.ly/ATLAS-Report}{ \faExternalLink}]
+\end{tightemize}
+\sectionsep
+
+\runsubsection{TinyBot}
+\descript{| Personal Project }
+\location{Mar - Nov '19}
+\begin{tightemize}
+	\item Created a very small wireless remote-controlled car of the order of 10*10*10mm as a challenge to a reddit post.
+	\item Custom designed a PCB for the power regulators and motor drivers, to be used along with the ESP8285. I believe it to be the smallest hobby-level RC car. 
+	% I am limited by the technology of my time...or perhaps money.
+\end{tightemize}
+\sectionsep
 
 \runsubsection{Room Occupancy Indicating System}
 \descript{| BE Sem VI project }
-\location{Feb - Apr 2018}
+\location{Feb - Apr '18 | SPIT, Mumbai}
 \begin{tightemize}
-\item A network of small wireless sensors to detect human presence in a room, across multiple such rooms. Group of 2.
-\item Involved a strong focus on wireless networking, low power design, PCB design, 3D modelling and printing.
-\item \textbf{3rd Prize} in Innovatron’18, an inter-college project presentation competition held at SPIT, Mumbai.
+	\item A network of small wireless sensors to detect human presence in a room, across multiple such rooms.
+	\item Involved a strong focus on wireless networking, low power design, PCB design, 3D modelling and printing.
 \end{tightemize}
 \sectionsep
 
 \runsubsection{3D Indoor Mapping}
 \descript{| BE Sem V project }
-\location{Aug - Oct 2017}
+\location{Aug - Oct '17 | SPIT, Mumbai}
 \begin{tightemize}
 	\item Used the Microsoft Kinect depth sensor and a Raspberry Pi running the Robot Operating System (ROS) to create a wireless 3D mapping setup.  
 \end{tightemize}
 \sectionsep
 
-\runsubsection{\href{https://www.instructables.com/id/The-Companion-IC/}{The Companion IC}}
-\descript{| Arduino Contest,  \href{https://www.instructables.com/}{Instructables} }
-\location{Jan 2016}
+\runsubsection{eYantra Robotics Competiton}
+\descript{\phantom{.}}
+\location{Nov '16 - Apr '17 | IIT Bombay}
 \begin{tightemize}
-	\item \href{https://www.instructables.com/id/The-Companion-IC/}{The Companion IC} is a lab bench tool for quick testing of electronic components with an aesthetic appeal to it.
-	\item \textbf{2nd out of 459 entries} from various parts of the world in the Arduino All-The-Things Contest on Instructables.
+	\item Planned and implemented the algorithms for motion planning and used OpenCV with Python for Image Processing.
+	\item Played the role of team leader in a team of 4. [Demo Video \href{https://youtu.be/5FSh1lrSGKg}{ \faYoutubePlay}]
 \end{tightemize}
 \sectionsep
 
-\runsubsection{Circuit Troubleshooting Competition}
+\runsubsection{CYKLO}
+\descript{| Startup}
+\location{Nov '15 - May '17 | SPIT, Mumbai}
+\begin{tightemize}
+	\item CYKLO is a point-to-point, peer-to-peer cycle sharing service, started in 2015 at Sardar Patel Institute of Technology(SPIT), Mumbai, with me as a core part of the team.
+	\item Designed, built and programmed several hardware prototypes for the automated cycle locking system, including the locking mechanism, electronic controller and network interface.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Training
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Training}
+
+\runsubsection{Robotics: Fundamentals}
+\descript{| UPennX, edX - Certificate \href{https://courses.edx.org/certificates/c152ee504c954a208a262c2fafe5aca3}{ \faExternalLink}}
+\location{Oct 2018}
+Kinematics and Mathematical Foundations for describing robotic arms and mobile robots using MATLAB.
+
+\sectionsep
+
+\runsubsection{Computation Structures}
+\descript{| MITx, edX - Uncertified }
+\location{Sep '16 - May '17}
+ Designed a 32-bit ‘Beta’ processor, ground up, from basic logic gates on the Jade simulator.
+
+\sectionsep
+
+\runsubsection{MSP-FPGA Hardware and Software Co-design}
 \descript{| SPIT, Mumbai}
-\location{29 Sep - 17 Oct '16}
-\begin{tightemize}
-	\item \textbf{1st Prize} in the departmental competition in which students were expected to troubleshoot and rectify faulty electronic circuits; first in simulation on TINA-TI software and later on a breadboard.
-\end{tightemize}
+\location{Sep 2016}
+ Workshop on interfacing of MSP430 with an FPGA to enable parallel processing of general purpose calculations on MSP and hardware optimized tasks on FPGA for faster throughput.
 \sectionsep
 
+\runsubsection{Embedded Systems Design}
+\descript{| SPIT, Mumbai}
+\location{Jun 2016}
+ Workshop on introduction to various technologies in Embedded Systems with	hands-on practice on development boards including Atmel AVR, ARM, Texas Instruments MSP and DSP.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Teaching
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Teaching and Roles of Responsibility} 
-\begin{tabular}{rll}
-2019	  & IEEE Workshop on Adding WiFi to your projects using ESP8266 and MQTT  & SPIT, Mumbai   \\
-2019	  & Teaching Assistantship: Robotic Vision  & SPIT, Mumbai   \\
-2018	  & Departmental Circuit Troubleshooting Competition  & SPIT, Mumbai   \\
-2018	  & IEEE Workshop on Introduction to Microcontrollers, Sensors and Arduino  & SPIT, Mumbai   \\
-2018	  & Workshop on Introduction to Embedded Systems Design  & SPIT, Mumbai   \\
-2016	  & Robocon Workshop on PCB making and basics of a robotic system  & SPIT, Mumbai   \\
-\end{tabular}
 \sectionsep
 
+\runsubsection{RoboCamp(Sr.) by ThinkLABS}
+\descript{| IIT Bombay}
+\location{Dec 2010}
+Basic STEM learning for school kids for an early start on autonomous robots and their control using graphical block-programming. Interfaced sensors like touch, IR and control of DC motor for robot actuation was learnt on the iPitara Robot by ThinkLABS. Participated in TRICKS 2010, IIT Bombay.
+\sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     AWARDS
@@ -352,52 +426,7 @@ Swimming \textbullet{} Reading \textbullet{} Video Games \\
 %\bibliography{publications}
 %\nocite{*}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Training
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Training}
-
-\runsubsection{Robotics: Fundamentals}
-\descript{| UPennX, edX }
-\location{Oct 2018}
-\begin{tightemize}
-\item Kinematics and Mathematical Foundations for describing robotic arms and mobile robots using MATLAB.
-\end{tightemize}
-\sectionsep
-
-\runsubsection{Computation Structures}
-\descript{| MITx, edX }
-\location{Sep '16 - May '17}
-\begin{tightemize}
-\item Understanding the principles and techniques used in the design of digital and computer systems. \item Designed a 32-bit ‘Beta’ processor, ground up, from basic logic gates on the Jade simulator.
-\end{tightemize}
-\sectionsep
-
-\runsubsection{MSP-FPGA Hardware and Software Co-design}
-\descript{| SPIT, Mumbai}
-\location{Sep 2016}
-\begin{tightemize}
-\item Workshop on interfacing of MSP430 with an FPGA to enable parallel processing of general purpose calculations on MSP and hardware optimized tasks on FPGA for faster throughput.
-\end{tightemize}
-\sectionsep
-
-\runsubsection{Embedded Systems Design}
-\descript{| SPIT, Mumbai}
-\location{Jun 2016}
-\begin{tightemize}
-	\item Workshop on introduction to various technologies in Embedded Systems with	hands-on practice on development boards including Atmel AVR, ARM, Texas Instruments MSP and DSP.
-\end{tightemize}
-\sectionsep
-
-\runsubsection{RoboCamp(Sr.) by ThinkLABS}
-\descript{| IIT Bombay}
-\location{Dec 2010}
-\begin{tightemize}
-	\item Basic STEM learning for school kids for an early start on autonomous robots and their control using graphical block-programming. 
-	\item Interfaced sensors like touch, IR and control of DC motor for robot actuation was learnt on the iPitara Robot by ThinkLABS. Participated in TRICKS 2010, IIT Bombay.
-\end{tightemize}
-\sectionsep
 
 
 \end{document}  \documentclass[]{article}
