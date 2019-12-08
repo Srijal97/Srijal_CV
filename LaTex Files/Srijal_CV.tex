@@ -1,0 +1,403 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% My Resume based on the: Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+\usepackage{fontawesome}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{}{Srijal Poojari}{\faGlobe \hspace{1pt} \urlstyle{same}\href{http://srijalpoojari.com}{srijalpoojari.com} \\ 
+\href{mailto:srijal97@gmail.com}{ \faEnvelope \hspace{1pt} srijal97@gmail.com} | \faMobile \hspace{0.5pt} +91 9967253367 | \faMapMarker \hspace{1pt} Mumbai, India}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Sardar Patel Institute \newline of Technology}
+\descript{BE in Electronics}
+University of Mumbai \\
+\location{May 2019 | Mumbai, India}
+\location{CGPA: 8.49 / 10}
+\sectionsep
+
+\subsection{MVM Junior College}
+\descript{Higher Secondary Certificate}
+Maharashtra State Board \\
+\location{Feb 2015 | Mumbai, India}
+\location{540/650 (83.08\%)}
+\sectionsep
+
+\subsection{St. Xavier's High School}
+\descript{Secondary School Certificate}
+Maharashtra State Board \\
+\location{Mar 2013 | Mumbai, India}
+\location{501/550 (91.09\%)}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Links} 
+%Facebook:// \href{https://facebook/dd}{\bf dd} \\
+%Github:// \href{https://github.com/deedydas}{\bf deedydas} \\
+%LinkedIn://  \href{https://www.linkedin.com/in/debarghyadas}{\bf debarghyadas} \\
+%YouTube://  \href{https://www.youtube.com/user/DeedyDash007}{\bf DeedyDash007} \\
+%Twitter://  \href{https://twitter.com/debarghya_das}{\bf @debarghya\_das} \\
+%Quora://  \href{https://www.quora.com/Debarghya-Das}{\bf Debarghya-Das}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Coursework}
+%\subsection{Graduate}
+%Advanced Machine Learning \\
+%Open Source Software Engineering \\
+%Advanced Interactive Graphics \\
+%Compilers + Practicum \\
+%Cloud Computing \\
+%Defending Computer Networks \\
+%Machine Learning \\
+%\sectionsep
+
+%\subsection{Undergraduate}
+%Information Retrieval \\
+%Operating Systems \\
+%Artificial Intelligence + Practicum \\
+%Functional Programming \\
+%Computer Graphics + Practicum \\
+%{\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst 2x) }}} \\
+%Unix Tools and Scripting \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Proficient:}
+Python \textbullet{}   C \textbullet{} C++ \\
+\location{Intermediate:}
+MATLAB \textbullet{} \LaTeX \\ %\textbullet{} C\# \textbullet{} Lua 
+\location{Familiar:}
+C\# \textbullet{} Lua \textbullet{} JavaScript
+\sectionsep
+
+\subsection{Hardware}
+\location{Development Boards and SoCs:}
+Arduino AVR, ARM \textbullet{} ATmega \\
+ESP32  \textbullet{} ESP8266 \textbullet{} Microchip dsPIC \\
+C2000 DSP \textbullet{} Raspberry Pi \textbullet{} MSP430 \\
+Nvidia Jetson TX2, Nano \\
+Particle Photon \textbullet{} Spartan V FPGA\\
+\location{Design and Development:}
+PCB Design \textbullet{} Power PCB Layouts \\
+SMD Soldering (QFP, QFN) \textbullet{} 3D Printing \\
+\sectionsep
+
+\subsection{Software}
+OpenCV \textbullet{} ROS  \textbullet{} VRep \\
+EAGLE  \textbullet{} Fusion 360 \textbullet{} Unity\\
+\sectionsep
+
+\section{Other Interests}
+
+RC Planes \textbullet{} Aviation \textbullet{} Electronics Salvage\\
+Swimming \textbullet{} Reading \textbullet{} Video Games \\
+% Art, acrylic painting
+
+\sectionsep
+
+%\section{Links}
+%
+%\begin{huge}
+%	\begin{tabular}{c c c c}
+%		\faUser	  & \faGithub  & \faLinkedin &  \faYoutube \\
+%	\end{tabular}
+%\end{huge}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects and Competitions
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects and Competitions}
+
+\runsubsection{Project ATLAS}
+\descript{| BE final year project | \href{http://www.drishti.works/}{Drishti Works}, Mumbai }
+\location{Jul '18 - Apr '19}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Build of a tethered multirotor with an AUW of 10Kgs.
+\item Designed 140V to 32V@20A step-down converters in a small form-factor for increasing the altitude capabilities of the system. [Publications pending]
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Project AURUS}
+\descript{| \href{http://www.drishti.works/}{Drishti Works}, Mumbai }
+\location{4 Jun – 15 Jul '18}
+\begin{tightemize}
+\item Worked on the development of AURUS, a beach cleaning robot.
+\item Involved in a diverse range of work including programming for the various sensors and functionality, developing the IMU system (MPU6050, MPU9250), the power distribution system, wiring, and several custom PCBs for the robot.
+\item Created ROS nodes for communication between the controller and Nvidia Jetson and greatly improved system reliability in the software aspect as well.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Hololens Experience Center}
+\descript{|  \href{https://fractalanalytics.com/}{Fractal Analytics}, Mumbai}
+\location{27 Nov - 26 Dec '17}
+\begin{tightemize}
+	\item Developed applications on the Microsoft HoloLens Mixed Reality(MR) headsets, in a group of 2.
+	\item Conventional statistical results of Share of Shelf, Share of Sight and Compliance for a supermarket shelf are presented in the form of holograms.
+	\item Learned app development in Unity using C\#, AR and MR concepts.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Modular Robots}
+\descript{| IIT Bombay }
+\location{22 May – 7 Jul '17}
+\begin{tightemize}
+	\item Internship to create self-reconfigurable robotic modules, in a group of 2.
+	\item 4 robotics modules were created which each consisted of an Arduino Nano, 5 servo motors, bluetooth, RF modules for wireless communication and LiPo batteries for power.
+	\item Created a Virtual Dtto interface on VRep with bluetooth control, sensors and behaviour identical to the actual robot.
+	\item Also involved designing the 3D CAD models of the modules on Fusion 360, Autodesk Inventor and 3D printing the designs.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{eYantra Robotics Competiton}
+\descript{| IIT Bombay }
+\location{Nov '16 - Apr '17}
+\begin{tightemize}
+\item \textbf{1st out of 162 teams} in the national level competition.
+\item Planned and implemented the algorithms for motion planning and used OpenCV with Python for Image Processing.
+\item Played the role of team leader in a team of 4. 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{CYKLO}
+\descript{| SPIT, Mumbai}
+\location{Nov '15 - May '17}
+\begin{tightemize}
+\item CYKLO is a point-to-point, peer-to-peer cycle sharing service, started in 2015 at Sardar Patel Institute of Technology(SPIT), Mumbai, with me as a core part of the team.
+\item Designed, built and programmed several hardware prototypes for the automated cycle locking system, including the locking mechanism, electronic controller and network interface.
+\item \textbf{1st Prize} in InterThrone 2017, an IoT focused contest under the Public Transport category with an award of \textbf{INR 300,000.}
+\end{tightemize}
+\sectionsep
+
+
+\end{minipage} 
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Other Work
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Other Work}
+
+\runsubsection{Room Occupancy Indicating System}
+\descript{| BE Sem VI project }
+\location{Feb - Apr 2018}
+\begin{tightemize}
+\item A network of small wireless sensors to detect human presence in a room, across multiple such rooms. Group of 2.
+\item Involved a strong focus on wireless networking, low power design, PCB design, 3D modelling and printing.
+\item \textbf{3rd Prize} in Innovatron’18, an inter-college project presentation competition held at SPIT, Mumbai.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{3D Indoor Mapping}
+\descript{| BE Sem V project }
+\location{Aug - Oct 2017}
+\begin{tightemize}
+	\item Used the Microsoft Kinect depth sensor and a Raspberry Pi running the Robot Operating System (ROS) to create a wireless 3D mapping setup.  
+\end{tightemize}
+\sectionsep
+
+\runsubsection{\href{https://www.instructables.com/id/The-Companion-IC/}{The Companion IC}}
+\descript{| Arduino Contest,  \href{https://www.instructables.com/}{Instructables} }
+\location{Jan 2016}
+\begin{tightemize}
+	\item \href{https://www.instructables.com/id/The-Companion-IC/}{The Companion IC} is a lab bench tool for quick testing of electronic components with an aesthetic appeal to it.
+	\item \textbf{2nd out of 459 entries} from various parts of the world in the Arduino All-The-Things Contest on Instructables.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Circuit Troubleshooting Competition}
+\descript{| SPIT, Mumbai}
+\location{29 Sep - 17 Oct '16}
+\begin{tightemize}
+	\item \textbf{1st Prize} in the departmental competition in which students were expected to troubleshoot and rectify faulty electronic circuits; first in simulation on TINA-TI software and later on a breadboard.
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Teaching
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Teaching and Roles of Responsibility} 
+\begin{tabular}{rll}
+2019	  & IEEE Workshop on Adding WiFi to your projects using ESP8266 and MQTT  & SPIT, Mumbai   \\
+2019	  & Teaching Assistantship: Robotic Vision  & SPIT, Mumbai   \\
+2018	  & Departmental Circuit Troubleshooting Competition  & SPIT, Mumbai   \\
+2018	  & IEEE Workshop on Introduction to Microcontrollers, Sensors and Arduino  & SPIT, Mumbai   \\
+2018	  & Workshop on Introduction to Embedded Systems Design  & SPIT, Mumbai   \\
+2016	  & Robocon Workshop on PCB making and basics of a robotic system  & SPIT, Mumbai   \\
+\end{tabular}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Awards} 
+%\begin{tabular}{rll}
+%2014	     & top 52/2500  & KPCB Engineering Fellow\\
+%2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
+%2013	     & National  & Jump Trading Challenge Finalist\\
+%2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
+%2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
+%2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
+%\end{tabular}
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Publications} 
+%\renewcommand\refname{\vskip -1.5em} % Couldn't get this working from the .cls file
+%\bibliographystyle{abbrv}
+%\bibliography{publications}
+%\nocite{*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Training
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Training}
+
+\runsubsection{Robotics: Fundamentals}
+\descript{| UPennX, edX }
+\location{Oct 2018}
+\begin{tightemize}
+\item Kinematics and Mathematical Foundations for describing robotic arms and mobile robots using MATLAB.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Computation Structures}
+\descript{| MITx, edX }
+\location{Sep '16 - May '17}
+\begin{tightemize}
+\item Understanding the principles and techniques used in the design of digital and computer systems. \item Designed a 32-bit ‘Beta’ processor, ground up, from basic logic gates on the Jade simulator.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{MSP-FPGA Hardware and Software Co-design}
+\descript{| SPIT, Mumbai}
+\location{Sep 2016}
+\begin{tightemize}
+\item Workshop on interfacing of MSP430 with an FPGA to enable parallel processing of general purpose calculations on MSP and hardware optimized tasks on FPGA for faster throughput.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Embedded Systems Design}
+\descript{| SPIT, Mumbai}
+\location{Jun 2016}
+\begin{tightemize}
+	\item Workshop on introduction to various technologies in Embedded Systems with	hands-on practice on development boards including Atmel AVR, ARM, Texas Instruments MSP and DSP.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{RoboCamp(Sr.) by ThinkLABS}
+\descript{| IIT Bombay}
+\location{Dec 2010}
+\begin{tightemize}
+	\item Basic STEM learning for school kids for an early start on autonomous robots and their control using graphical block-programming. 
+	\item Interfaced sensors like touch, IR and control of DC motor for robot actuation was learnt on the iPitara Robot by ThinkLABS. Participated in TRICKS 2010, IIT Bombay.
+\end{tightemize}
+\sectionsep
+
+
+\end{document}  \documentclass[]{article}
